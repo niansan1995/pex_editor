@@ -1,0 +1,56 @@
+{
+  "scope": "fictional numeric parameters and anonymized identifying text",
+  "starrc_execution": "not run",
+  "files": [
+    {
+      "name": "starrc_CMAX.itf",
+      "numeric_parameters_replaced": 213,
+      "corporate_contact_comment_removed": true,
+      "technology_label": "DEMO_PROCESS_CMAX",
+      "all_other_source_structure_preserved": true,
+      "numeric_notation_and_precision_preserved": true,
+      "table_axes_ascending": true,
+      "via_references_valid": true
+    },
+    {
+      "name": "starrc_CMIN.itf",
+      "numeric_parameters_replaced": 213,
+      "corporate_contact_comment_removed": true,
+      "technology_label": "DEMO_PROCESS_CMIN",
+      "all_other_source_structure_preserved": true,
+      "numeric_notation_and_precision_preserved": true,
+      "table_axes_ascending": true,
+      "via_references_valid": true
+    },
+    {
+      "name": "starrc_RCMAX.itf",
+      "numeric_parameters_replaced": 213,
+      "corporate_contact_comment_removed": true,
+      "technology_label": "DEMO_PROCESS_RCMAX",
+      "all_other_source_structure_preserved": true,
+      "numeric_notation_and_precision_preserved": true,
+      "table_axes_ascending": true,
+      "via_references_valid": true
+    },
+    {
+      "name": "starrc_RCMIN.itf",
+      "numeric_parameters_replaced": 213,
+      "corporate_contact_comment_removed": true,
+      "technology_label": "DEMO_PROCESS_RCMIN",
+      "all_other_source_structure_preserved": true,
+      "numeric_notation_and_precision_preserved": true,
+      "table_axes_ascending": true,
+      "via_references_valid": true
+    },
+    {
+      "name": "starrc_TYP.itf",
+      "numeric_parameters_replaced": 213,
+      "corporate_contact_comment_removed": true,
+      "technology_label": "DEMO_PROCESS_TYP",
+      "all_other_source_structure_preserved": true,
+      "numeric_notation_and_precision_preserved": true,
+      "table_axes_ascending": true,
+      "via_references_valid": true
+    }
+  ]
+}
