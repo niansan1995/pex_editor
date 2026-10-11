@@ -1,0 +1,45 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "PEX: Generate metal option ITF",
+      "type": "process",
+      "command": "python3",
+      "windows": {
+        "command": "py"
+      },
+      "args": [
+        "${workspaceFolder}/scripts/generate_itf.py",
+        "--metal-options",
+        "${workspaceFolder}/metal_option.json",
+        "--output-dir",
+        "${workspaceFolder}/build",
+        "--metal-option",
+        "${input:pexMetalOption}",
+        "--corner",
+        "all"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "pexMetalOption",
+      "type": "promptString",
+      "description": "Metal option name from metal_option.json, or all",
+      "default": "all"
+    }
+  ]
+}

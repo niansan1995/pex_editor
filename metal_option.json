@@ -1,0 +1,175 @@
+{
+  "header_template": "templates/header.itf.j2",
+  "naming": {
+    "metal": "metal{{ MID }}",
+    "pad": "ALPA",
+    "via": "V{{ VIA_ID }}"
+  },
+  "components": {
+    "INTER_METAL": {
+      "kind": "metal",
+      "template": "templates/inter_metal.itf.j2"
+    },
+    "TM": {
+      "kind": "metal",
+      "template": "templates/tm.itf.j2"
+    },
+    "MTT": {
+      "kind": "metal",
+      "template": "templates/mtt.itf.j2"
+    },
+    "ALPA1": {
+      "kind": "pad",
+      "template": "templates/alpa1.itf.j2"
+    },
+    "ALPA2": {
+      "kind": "pad",
+      "template": "templates/alpa2.itf.j2"
+    },
+    "VIA": {
+      "kind": "via",
+      "template": "templates/via.itf.j2"
+    }
+  },
+  "metal_options": {
+    "1P5M_4Ic_1MTTc_ALPA1_MIM10": [
+      "ALPA1",
+      "MTT",
+      "INTER_METAL",
+      "INTER_METAL",
+      "INTER_METAL",
+      "INTER_METAL",
+      {
+        "component": "VIA",
+        "name": "PA",
+        "connect": [
+          5,
+          6
+        ]
+      },
+      {
+        "component": "VIA",
+        "connect": [
+          4,
+          5
+        ]
+      },
+      {
+        "component": "VIA",
+        "connect": [
+          3,
+          4
+        ]
+      },
+      {
+        "component": "VIA",
+        "connect": [
+          2,
+          3
+        ]
+      },
+      {
+        "component": "VIA",
+        "connect": [
+          1,
+          2
+        ]
+      }
+    ],
+    "1P5M_3Ic_2TMc_ALPA1_MIM10": [
+      "ALPA1",
+      "TM",
+      "TM",
+      "INTER_METAL",
+      "INTER_METAL",
+      "INTER_METAL",
+      {
+        "component": "VIA",
+        "name": "PA",
+        "connect": [
+          5,
+          6
+        ]
+      },
+      {
+        "component": "VIA",
+        "connect": [
+          4,
+          5
+        ]
+      },
+      {
+        "component": "VIA",
+        "connect": [
+          3,
+          4
+        ]
+      },
+      {
+        "component": "VIA",
+        "connect": [
+          2,
+          3
+        ]
+      },
+      {
+        "component": "VIA",
+        "connect": [
+          1,
+          2
+        ]
+      }
+    ],
+    "1P5M_3Ic_1TMc_1MTTc_ALPA2_MIM10": [
+      "ALPA2",
+      "MTT",
+      "TM",
+      "INTER_METAL",
+      "INTER_METAL",
+      "INTER_METAL",
+      {
+        "component": "VIA",
+        "name": "PA",
+        "connect": [
+          5,
+          6
+        ]
+      },
+      {
+        "component": "VIA",
+        "connect": [
+          4,
+          5
+        ]
+      },
+      {
+        "component": "VIA",
+        "connect": [
+          3,
+          4
+        ]
+      },
+      {
+        "component": "VIA",
+        "connect": [
+          2,
+          3
+        ]
+      },
+      {
+        "component": "VIA",
+        "connect": [
+          1,
+          2
+        ]
+      }
+    ]
+  },
+  "suffix_templates": [
+    "templates/frontend.itf.j2"
+  ],
+  "via_templates": [
+    "templates/frontend_vias.itf.j2"
+  ],
+  "parameter_file": "parameters.json"
+}
