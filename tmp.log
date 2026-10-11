@@ -1,5 +1,1 @@
-这是之前的需求：“写一个python脚本以及必要的VS code环境配置。VSCode Ctrl+b触发VS code编译时，调用Python脚本，给予用户的模板文件中生成一份PEX cornor itf文件。模板文件除基本语法外，包含必要参数例如厚度，电阻率，参数都采用变量形式，建议参照Django双括号形式标记变量，然后有一个变量配置文件定义不同corner下变量值”。现在我希望可以自由排列组合metal option，例如写5个不同的模板，分别是1)前中段、2)是inter metal，3)是TM2型top metal，4)是MTT2型top metal、5)是ALPA1、6)是ALPA2。然后要增加一个metal_option.json，面详细列举了需要哪些组成，例如：
-1P5M_4Ic_1MTTc_ALPA1_MIM10	M1	V1	M2	V2	M3	V3	M4  TV2	MTT2	PA	ALPA1
-1P5M_3Ic_2TMc_ALPA1_MIM10	M1	V1	M2	V2	M3  TV1	TM1	TV2	TM2 PA	ALPA1
-1P5M_3Ic_1TMc_1MTTc_ALPA2_MIM10	M1	V1	M2	V2	M3  TV1	TM1 TV2	MTT2	PA	ALPA2
-然后基于列表，用对应模板组合，完成对应matal option的开发。build下无需itf子目录，子文件夹目录直接是metal option，里面是三个corner文件。
+测试修改 by bonan 261011 in dev
